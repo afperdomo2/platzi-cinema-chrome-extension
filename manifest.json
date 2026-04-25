@@ -3,6 +3,9 @@
   "name": "Platzi Cinema Mode",
   "version": "1.0",
   "description": "Modo cine para el reproductor de Platzi",
+  "action": {
+    "default_icon": "icons/icono_cinema.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://platzi.com/cursos/*"],
