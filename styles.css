@@ -1,0 +1,56 @@
+/* --- ACCIONES CUANDO EL MODO CINE ESTÁ ACTIVO --- */
+
+/* 1. Reset del Contenedor Raíz (el ID que me pasaste) */
+body.extension-cinema-mode #LayoutContainer {
+  display: block !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 2. Ocultar Menú Lateral (nav#mainmenu) y Banners laterales */
+body.extension-cinema-mode #mainmenu,
+body.extension-cinema-mode .Layout_Layout-leftBottomMenu__Po5t0,
+body.extension-cinema-mode [class*="MainMenu"] {
+  display: none !important;
+}
+
+/* 3. Estirar el Main Layout (id MainLayout) */
+body.extension-cinema-mode #MainLayout {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+/* 4. Ocultar la sección de pestañas/comentarios (la que identificaste antes) */
+body.extension-cinema-mode [class*="page_Classes__tabs"],
+body.extension-cinema-mode aside {
+  display: none !important;
+  width: 0 !important;
+}
+
+/* 5. Forzar el reproductor al 100% */
+body.extension-cinema-mode [class*="page_Classes___w9i3"],
+body.extension-cinema-mode [class*="VideoPlayer-container"],
+body.extension-cinema-mode .Player-main {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* 6. Ajuste final del video */
+body.extension-cinema-mode video {
+  width: 100vw !important;
+  height: auto !important;
+  max-height: 80vh !important;
+  background: #000 !important;
+}
+
+/* 7. Ocultar el Header de la clase si quieres más espacio */
+body.extension-cinema-mode .page_Classes__info___OiCZ {
+  padding-top: 10px !important;
+}

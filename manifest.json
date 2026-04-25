@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Platzi Cinema Mode",
+  "version": "1.0",
+  "description": "Modo cine para el reproductor de Platzi",
+  "content_scripts": [
+    {
+      "matches": ["*://platzi.com/cursos/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
