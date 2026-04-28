@@ -1,3 +1,32 @@
+/* --- ANIMACIONES PARA EL BOTÓN --- */
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Indicador pulsante cuando el modo cine está activo */
+#cinema-btn.cinema-btn-active::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ff1a1a;
+  border-radius: 50%;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+#cinema-btn {
+  position: relative;
+}
+
 /* --- ACCIONES CUANDO EL MODO CINE ESTÁ ACTIVO --- */
 
 /* 1. Reset del Contenedor Raíz (el ID que me pasaste) */
