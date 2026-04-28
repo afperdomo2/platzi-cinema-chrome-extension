@@ -1,5 +1,3 @@
-console.log("🚀 Extensión Platzi Cinema Mode cargada");
-
 function injectCinemaButton() {
   if (document.getElementById("cinema-btn")) return;
 
@@ -30,22 +28,22 @@ function injectCinemaButton() {
   btn.onclick = (e) => {
     e.preventDefault();
     const isActive = document.body.classList.toggle("extension-cinema-mode");
-    
+
     if (isActive) {
       btn.classList.remove("cinema-btn-inactive");
       btn.classList.add("cinema-btn-active");
-      btn.innerHTML = "● Salir del cine";
+      btn.innerHTML = "Salir del cine";
       btn.style.background = "#c9a84c";
       btn.style.color = "#1a1a1a";
       btn.style.borderColor = "#c9a84c";
-    } else {
-      btn.classList.remove("cinema-btn-active");
-      btn.classList.add("cinema-btn-inactive");
-      btn.innerHTML = "▶ Modo Cine";
-      btn.style.background = "#1a1a1a";
-      btn.style.color = "#c9a84c";
-      btn.style.borderColor = "#c9a84c";
+      return;
     }
+    btn.classList.remove("cinema-btn-active");
+    btn.classList.add("cinema-btn-inactive");
+    btn.innerHTML = "▶ Modo Cine";
+    btn.style.background = "#1a1a1a";
+    btn.style.color = "#c9a84c";
+    btn.style.borderColor = "#c9a84c";
   };
 
   // Hover effects
