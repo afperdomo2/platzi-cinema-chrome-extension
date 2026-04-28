@@ -234,4 +234,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+PlatziCinemaMode.zip
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,visualstudiocode
