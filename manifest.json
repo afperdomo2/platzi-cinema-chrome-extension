@@ -12,6 +12,5 @@
       "css": ["styles.css"],
       "js": ["content.js"]
     }
-  ],
-  "permissions": ["storage"]
+  ]
 }
